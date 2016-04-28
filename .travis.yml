@@ -6,7 +6,7 @@ script:
 
 before_install:
  - chmod +x gradlew
- - mysql -e "create database IF NOT EXISTS webapplication;" -uroot
+ - mysql -e "create database IF NOT EXISTS webapp;" -uroot
 
 before_script:
 - ./gradlew createDatabase
