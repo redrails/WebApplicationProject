@@ -1,15 +1,12 @@
 language: java
 sudo: required
 script:
- - ./gradlew cucumber
- - ./gradlew check
+ - gradle check
+ - gradle cucumber
 
 before_install:
  - chmod +x gradlew
  - mysql -e "create database IF NOT EXISTS webapp;" -uroot
-
-before_script:
-- ./gradlew createDatabase
 
 jdk:
  - oraclejdk7
