@@ -1,0 +1,26 @@
+language: java
+script:
+ - ./gradlew cucumber
+ - ./gradlew -i check
+ - ./gradlew jar
+
+before_install:
+ - chmod +x gradlew
+ - mysql -e "create database IF NOT EXISTS webapplication;" -uroot
+
+before_script:
+- ./gradlew createDatabase
+
+jdk:
+ - oraclejdk7
+ - openjdk7
+
+services:
+- mysql
+
+after_success:
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash
+  travis-scripts/push-test-results.sh
+
+notifications:
+  email: false
