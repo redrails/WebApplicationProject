@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: cancel assessment" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-04-28T14:57:35" hostname="spc43" time="0.13">
+  <properties/>
+  <testcase name="Given I am assessing change requests" classname="Scenario: cancel assessment" time="0.0"/>
+  <testcase name="When I request to cancel the assessment" classname="Scenario: cancel assessment" time="0.0"/>
+  <testcase name="Then I stop seeing change requests" classname="Scenario: cancel assessment" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: cancel assessment" time="0.168"/>
+  <system-out><![CDATA[15:57:35.807 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+15:57:35.807 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+15:57:35.808 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [webAppProject.CompleteRequestSteps] from class [org.springframework.test.context.web.WebTestContextBootstrapper]
+15:57:35.808 [Test worker] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to AnnotationConfigWebContextLoader to process context configuration [ContextConfigurationAttributes@e290521 declaringClass = 'webAppProject.CompleteRequestSteps', classes = '{class webAppProject.webAppProjectApplication, class webAppProject.SecurityConfig, class webAppProject.WebConfig}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+15:57:35.808 [Test worker] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [webAppProject.CompleteRequestSteps]
+15:57:35.808 [Test worker] DEBUG o.s.t.c.w.WebTestContextBootstrapper - @TestExecutionListeners is not present for class [webAppProject.CompleteRequestSteps]: using defaults.
+15:57:35.809 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+15:57:35.809 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5e278b4d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3d2a56c6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@17102e95, org.springframework.test.context.transaction.TransactionalTestExecutionListener@23ff2f7a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@41e0a5ab, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@2e934737]
+15:57:35.810 [Test worker] DEBUG o.s.t.c.c.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@38e1a0f6 testClass = CompleteRequestSteps, locations = '{}', classes = '{class webAppProject.webAppProjectApplication, class webAppProject.SecurityConfig, class webAppProject.WebConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+15:57:35.810 [Test worker] DEBUG o.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@cd0ded3 size = 1, parentContextCount = 0, hitCount = 8, missCount = 1]
+15:57:35.810 [Test worker] INFO  o.s.b.f.s.DefaultListableBeanFactory - Replacing scope 'cucumber-glue' from [cucumber.runtime.java.spring.GlueCodeScope@757be84b] to [cucumber.runtime.java.spring.GlueCodeScope@623fdc6f]
+15:57:35.810 [Test worker] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2636e07e testClass = CompleteRequestSteps, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@38e1a0f6 testClass = CompleteRequestSteps, locations = '{}', classes = '{class webAppProject.webAppProjectApplication, class webAppProject.SecurityConfig, class webAppProject.WebConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+15:57:35.810 [Test worker] DEBUG o.s.t.c.c.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@38e1a0f6 testClass = CompleteRequestSteps, locations = '{}', classes = '{class webAppProject.webAppProjectApplication, class webAppProject.SecurityConfig, class webAppProject.WebConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+15:57:35.810 [Test worker] DEBUG o.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@cd0ded3 size = 1, parentContextCount = 0, hitCount = 9, missCount = 1]
+15:57:35.810 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'webAppProject.CompleteRequestSteps'
+15:57:35.810 [Test worker] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'webAppProject.CompleteRequestSteps': AutowiredFieldElement for private org.springframework.web.context.WebApplicationContext webAppProject.CompleteRequestSteps.wac
+15:57:35.810 [Test worker] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'webAppProject.CompleteRequestSteps': AutowiredFieldElement for private webAppProject.persistence.repository.UserRepository webAppProject.CompleteRequestSteps.userRepo
+15:57:35.810 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userRepository'
+15:57:35.810 [Test worker] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'webAppProject.CompleteRequestSteps': AutowiredFieldElement for private webAppProject.persistence.repository.RequestRepository webAppProject.CompleteRequestSteps.reqRepo
+15:57:35.810 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'requestRepository'
+15:57:35.810 [Test worker] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'webAppProject.CompleteRequestSteps': AutowiredFieldElement for private javax.servlet.Filter webAppProject.CompleteRequestSteps.springSecurityFilterChain
+15:57:35.810 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'springSecurityFilterChain'
+15:57:35.810 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'webAppProject.CompleteRequestSteps'
+15:57:35.810 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Initializing servlet ''
+15:57:35.811 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+15:57:35.811 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletContextInitParams] PropertySource with lowest search precedence
+15:57:35.811 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+15:57:35.811 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+15:57:35.811 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+15:57:35.811 [Test worker] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+15:57:35.811 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+15:57:35.811 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'multipartResolver'
+15:57:35.811 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using MultipartResolver [org.springframework.web.multipart.support.StandardServletMultipartResolver@661f922d]
+15:57:35.811 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+15:57:35.811 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+15:57:35.811 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@1228a170]
+15:57:35.811 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+15:57:35.811 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+15:57:35.811 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@27fb55d3]
+15:57:35.812 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'requestMappingHandlerMapping'
+15:57:35.812 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'viewControllerHandlerMapping'
+15:57:35.812 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'beanNameHandlerMapping'
+15:57:35.812 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'resourceHandlerMapping'
+15:57:35.812 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'defaultServletHandlerMapping'
+15:57:35.812 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'faviconHandlerMapping'
+15:57:35.812 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'requestMappingHandlerAdapter'
+15:57:35.812 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'httpRequestHandlerAdapter'
+15:57:35.812 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'simpleControllerHandlerAdapter'
+15:57:35.812 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'errorAttributes'
+15:57:35.812 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'handlerExceptionResolver'
+15:57:35.812 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+15:57:35.812 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+15:57:35.812 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3bbb29e7]
+15:57:35.813 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'viewResolver'
+15:57:35.813 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'beanNameViewResolver'
+15:57:35.813 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'mvcViewResolver'
+15:57:35.813 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+15:57:35.813 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+15:57:35.813 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@2a9f1bfe]
+15:57:35.813 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+15:57:35.813 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 2 ms
+15:57:35.813 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Servlet '' configured successfully
+15:57:35.813 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'webAppProject.AssessChangeRequestSteps'
+15:57:35.813 [Test worker] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'webAppProject.AssessChangeRequestSteps': AutowiredFieldElement for private org.springframework.web.context.WebApplicationContext webAppProject.AssessChangeRequestSteps.wac
+15:57:35.813 [Test worker] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'webAppProject.AssessChangeRequestSteps': AutowiredFieldElement for private webAppProject.persistence.repository.UserRepository webAppProject.AssessChangeRequestSteps.userRepo
+15:57:35.813 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userRepository'
+15:57:35.813 [Test worker] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'webAppProject.AssessChangeRequestSteps': AutowiredFieldElement for private webAppProject.persistence.repository.RequestRepository webAppProject.AssessChangeRequestSteps.reqRepo
+15:57:35.813 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'requestRepository'
+15:57:35.813 [Test worker] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'webAppProject.AssessChangeRequestSteps': AutowiredFieldElement for private javax.servlet.Filter webAppProject.AssessChangeRequestSteps.springSecurityFilterChain
+15:57:35.813 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'springSecurityFilterChain'
+15:57:35.813 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'webAppProject.AssessChangeRequestSteps'
+15:57:35.813 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Initializing servlet ''
+15:57:35.814 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+15:57:35.814 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletContextInitParams] PropertySource with lowest search precedence
+15:57:35.814 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+15:57:35.814 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+15:57:35.814 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+15:57:35.814 [Test worker] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+15:57:35.814 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+15:57:35.814 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'multipartResolver'
+15:57:35.814 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using MultipartResolver [org.springframework.web.multipart.support.StandardServletMultipartResolver@661f922d]
+15:57:35.814 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+15:57:35.814 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+15:57:35.814 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@7deb0cfc]
+15:57:35.814 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+15:57:35.814 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+15:57:35.814 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@438b5f]
+15:57:35.814 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'requestMappingHandlerMapping'
+15:57:35.814 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'viewControllerHandlerMapping'
+15:57:35.814 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'beanNameHandlerMapping'
+15:57:35.814 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'resourceHandlerMapping'
+15:57:35.814 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'defaultServletHandlerMapping'
+15:57:35.814 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'faviconHandlerMapping'
+15:57:35.815 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'requestMappingHandlerAdapter'
+15:57:35.815 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'httpRequestHandlerAdapter'
+15:57:35.815 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'simpleControllerHandlerAdapter'
+15:57:35.815 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'errorAttributes'
+15:57:35.815 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'handlerExceptionResolver'
+15:57:35.815 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+15:57:35.815 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+15:57:35.815 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@62d56ea1]
+15:57:35.815 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'viewResolver'
+15:57:35.815 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'beanNameViewResolver'
+15:57:35.815 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'mvcViewResolver'
+15:57:35.815 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+15:57:35.815 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+15:57:35.815 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@30c7c9ee]
+15:57:35.815 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+15:57:35.815 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 1 ms
+15:57:35.815 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Servlet '' configured successfully
+15:57:35.816 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'webAppProject.RequestChangeSteps'
+15:57:35.816 [Test worker] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'webAppProject.RequestChangeSteps': AutowiredFieldElement for private org.springframework.web.context.WebApplicationContext webAppProject.RequestChangeSteps.wac
+15:57:35.816 [Test worker] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'webAppProject.RequestChangeSteps': AutowiredFieldElement for private webAppProject.persistence.repository.UserRepository webAppProject.RequestChangeSteps.userRepo
+15:57:35.816 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userRepository'
+15:57:35.816 [Test worker] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'webAppProject.RequestChangeSteps': AutowiredFieldElement for private webAppProject.persistence.repository.RequestRepository webAppProject.RequestChangeSteps.reqRepo
+15:57:35.816 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'requestRepository'
+15:57:35.816 [Test worker] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'webAppProject.RequestChangeSteps': AutowiredFieldElement for private webAppProject.persistence.repository.VersionRepository webAppProject.RequestChangeSteps.versRepo
+15:57:35.816 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'versionRepository'
+15:57:35.816 [Test worker] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'webAppProject.RequestChangeSteps': AutowiredFieldElement for private webAppProject.persistence.repository.SCIRepository webAppProject.RequestChangeSteps.sciRepo
+15:57:35.816 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'SCIRepository'
+15:57:35.816 [Test worker] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'webAppProject.RequestChangeSteps': AutowiredFieldElement for private javax.servlet.Filter webAppProject.RequestChangeSteps.springSecurityFilterChain
+15:57:35.816 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'springSecurityFilterChain'
+15:57:35.816 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'webAppProject.RequestChangeSteps'
+15:57:35.816 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Initializing servlet ''
+15:57:35.816 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+15:57:35.816 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletContextInitParams] PropertySource with lowest search precedence
+15:57:35.816 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+15:57:35.816 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+15:57:35.816 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+15:57:35.816 [Test worker] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+15:57:35.816 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+15:57:35.816 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'multipartResolver'
+15:57:35.816 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using MultipartResolver [org.springframework.web.multipart.support.StandardServletMultipartResolver@661f922d]
+15:57:35.816 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+15:57:35.816 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+15:57:35.816 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@15eeafe6]
+15:57:35.816 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+15:57:35.816 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+15:57:35.816 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@9ebd777]
+15:57:35.817 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'requestMappingHandlerMapping'
+15:57:35.817 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'viewControllerHandlerMapping'
+15:57:35.817 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'beanNameHandlerMapping'
+15:57:35.817 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'resourceHandlerMapping'
+15:57:35.817 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'defaultServletHandlerMapping'
+15:57:35.817 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'faviconHandlerMapping'
+15:57:35.817 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'requestMappingHandlerAdapter'
+15:57:35.817 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'httpRequestHandlerAdapter'
+15:57:35.817 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'simpleControllerHandlerAdapter'
+15:57:35.818 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'errorAttributes'
+15:57:35.818 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'handlerExceptionResolver'
+15:57:35.818 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+15:57:35.818 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+15:57:35.818 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4082008d]
+15:57:35.818 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'viewResolver'
+15:57:35.818 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'beanNameViewResolver'
+15:57:35.818 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'mvcViewResolver'
+15:57:35.818 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+15:57:35.819 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+15:57:35.819 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@4e0439ca]
+15:57:35.819 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+15:57:35.819 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 3 ms
+15:57:35.819 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Servlet '' configured successfully
+
+  @controller
+  Scenario: reject a change request (controller)                                                ?[90m# AssessChangeRequest.feature:27?[0m
+    ?[32mGiven ?[0m?[32mthe pending change request "?[0m?[32m?[1mNew Feature?[0m?[32m" in a list of pending requests?[0m                ?[90m# AssessChangeRequestSteps.the_pending_change_request_in_a_list_of_pending_requests(String)?[0m
+    ?[32mWhen ?[0m?[32mI reject it with explanation "?[0m?[32m?[1mfeature already considered in the new release candidate?[0m?[32m"?[0m ?[90m# AssessChangeRequestSteps.i_reject_it_with_explanation(String)?[0m
+    ?[32mThen ?[0m?[32mI should see the next pending request (if any)?[0m                                         ?[90m# AssessChangeRequestSteps.i_should_see_the_next_pending_request_if_any()?[0m
+15:57:35.820 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing GET request for [/evaluate-request]
+15:57:35.820 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /evaluate-request
+15:57:35.820 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public org.springframework.web.servlet.ModelAndView webAppProject.controller.IndexController.evaluate()]
+15:57:35.820 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'indexController'
+15:57:35.820 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Last-Modified value for [/evaluate-request] is: -1
+15:57:35.820 [Test worker] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+15:57:35.820 [Test worker] DEBUG o.h.jpa.criteria.CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Request as generatedAlias0 where generatedAlias0.status=:param0
+15:57:35.820 [Test worker] DEBUG org.hibernate.SQL - select request0_.id as id1_0_, request0_.assessment as assessme2_0_, request0_.completion as completi3_0_, request0_.deadline as deadline4_0_, request0_.developer as develope5_0_, request0_.priority as priority6_0_, request0_.problem as problem7_0_, request0_.req_type as req_type8_0_, request0_.solution as solution9_0_, request0_.status as status10_0_, request0_.versionid as version11_0_ from requests request0_ where request0_.status=?
+15:57:35.820 [Test worker] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+15:57:35.821 [Test worker] DEBUG o.s.j.d.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://mysql.mcscw3.le.ac.uk:3306/mic7]
+15:57:35.835 [Test worker] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtained JDBC connection
+15:57:35.837 [Test worker] DEBUG o.s.d.r.c.s.TransactionalRepositoryProxyPostProcessor$CustomAnnotationTransactionAttributeSource - Adding transactional method 'findAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly; ''
+15:57:35.837 [Test worker] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@28d37b9a] for JPA transaction
+15:57:35.837 [Test worker] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly; ''
+15:57:35.838 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils - Setting JDBC Connection [com.mysql.jdbc.JDBC4Connection@4d82d4bf] read-only
+15:57:35.838 [Test worker] DEBUG o.h.e.t.spi.AbstractTransactionImpl - begin
+15:57:35.838 [Test worker] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - initial autocommit status: true
+15:57:35.838 [Test worker] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - disabling autocommit
+15:57:35.839 [Test worker] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@29d98069]
+15:57:35.839 [Test worker] DEBUG o.h.jpa.criteria.CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0
+15:57:35.839 [Test worker] DEBUG org.hibernate.SQL - select user0_.id as id1_4_, user0_.enabled as enabled2_4_, user0_.login as login3_4_, user0_.password as password4_4_, user0_1_.role_id as role_id1_3_ from users user0_ left outer join user_roles user0_1_ on user0_.id=user0_1_.user_id
+15:57:35.841 [Test worker] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+15:57:35.841 [Test worker] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@28d37b9a]
+15:57:35.841 [Test worker] DEBUG o.h.e.t.spi.AbstractTransactionImpl - committing
+15:57:35.841 [Test worker] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - committed JDBC Connection
+15:57:35.841 [Test worker] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - re-enabling autocommit
+15:57:35.842 [Test worker] DEBUG o.s.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [com.mysql.jdbc.JDBC4Connection@4d82d4bf]
+15:57:35.842 [Test worker] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+15:57:35.843 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'evaluate-request'
+15:57:35.843 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:35.843 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:35.843 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'evaluate-request'; URL [/WEB-INF/views/evaluate-request.jsp]] in DispatcherServlet with name ''
+15:57:35.843 [Test worker] DEBUG o.s.web.servlet.view.JstlView - Added model object 'reqEval' of type [webAppProject.domain.Request] to request in view with name 'evaluate-request'
+15:57:35.843 [Test worker] DEBUG o.s.web.servlet.view.JstlView - Added model object 'nomore' of type [java.lang.Boolean] to request in view with name 'evaluate-request'
+15:57:35.843 [Test worker] DEBUG o.s.web.servlet.view.JstlView - Added model object 'org.springframework.validation.BindingResult.reqEval' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'evaluate-request'
+15:57:35.843 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'requestDataValueProcessor'
+15:57:35.844 [Test worker] DEBUG o.s.web.servlet.view.JstlView - Forwarding to resource [/WEB-INF/views/evaluate-request.jsp] in InternalResourceView 'evaluate-request'
+15:57:35.845 [Test worker] DEBUG o.s.mock.web.MockRequestDispatcher - MockRequestDispatcher: forwarding to [/WEB-INF/views/evaluate-request.jsp]
+15:57:35.845 [Test worker] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+15:57:35.845 [Test worker] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+15:57:35.845 [Test worker] DEBUG o.h.e.j.i.LogicalConnectionImpl - Releasing JDBC connection
+15:57:35.845 [Test worker] DEBUG o.h.e.j.i.LogicalConnectionImpl - Released JDBC connection
+15:57:35.845 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Successfully completed request
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

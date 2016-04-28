@@ -15,7 +15,7 @@ public class DbConfig {
 		ds.setUrl("jdbc:mysql://localhost:3306/webapp");
 		ds.setUsername("root");
 		ds.setPassword("");
-	    	return ds;
+    	return ds;
 	}
 }
 
