@@ -1,4 +1,5 @@
 language: java
+sudo: required
 script:
  - ./gradlew cucumber
  - ./gradlew -i check
