@@ -4,7 +4,6 @@ sudo: required
 
 script:
  - ./gradlew check
- - ./gradlew cucumber
 
 before_install:
  - chmod +x gradlew
