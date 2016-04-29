@@ -13,8 +13,8 @@ before_script:
 - ./gradlew createDatabase
 
 jdk:
- - oraclejdk7
- - openjdk7
+ - oraclejdk8
+ - openjdk8
 
 services:
 - mysql
