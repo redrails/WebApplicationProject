@@ -1,8 +1,6 @@
 language: java
 script:
- - ./gradlew cucumber
  - ./gradlew -i check
- - ./gradlew jar
 
 before_install:
  - chmod +x gradlew
@@ -19,8 +17,6 @@ services:
 - mysql
 
 after_success:
-- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash
-  travis-scripts/push-test-results.sh
 
 notifications:
   email: false
