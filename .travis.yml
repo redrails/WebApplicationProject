@@ -9,9 +9,6 @@ before_install:
  - chmod +x gradlew
  - mysql -e "create database IF NOT EXISTS webapp;" -uroot
 
-before_script:
-- ./gradlew createDatabase
-
 jdk:
  - oraclejdk8
  - openjdk8
