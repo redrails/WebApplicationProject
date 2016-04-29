@@ -10,8 +10,8 @@ before_install:
  - mysql -e "create database IF NOT EXISTS webapp;" -uroot
 
 jdk:
- - oraclejdk8
- - openjdk8
+ - oraclejdk7
+ - openjdk7
 
 services:
 - mysql
