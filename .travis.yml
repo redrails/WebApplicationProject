@@ -3,7 +3,7 @@ language: java
 sudo: required
 
 script:
- - ./gradlew -i check
+ - ./gradlew check
 
 before_install:
  - chmod +x gradlew
@@ -15,8 +15,6 @@ jdk:
 
 services:
 - mysql
-
-after_success:
 
 notifications:
   email: false
