@@ -15,5 +15,3 @@ services:
 
 notifications:
   email: false
-
-
